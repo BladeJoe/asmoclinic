@@ -1,0 +1,14 @@
+ .card {
+ 	box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+ 	border-radius: 20px;
+ 	transition: all 1s ease;
+ }
+
+ .card:hover {
+ 	transform: scale(1.15);
+ }
+
+ body {
+ 	background: url("./../images/background.jpg") fixed no-repeat center;
+	background-size	: cover ;
+ }
