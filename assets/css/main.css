@@ -11,4 +11,8 @@
  body {
  	background: url("./../images/background.jpg") fixed no-repeat center;
 	background-size	: cover ;
+	font-weight: bold;
+ }
+ a,button{
+	font-weight: bold !important;
  }
