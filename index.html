@@ -5,19 +5,57 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
 	<meta name="description" content="Asmoclinic - Асмоклиник">
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet">
-	<title>Asmoclinic</title>
+	<title>Asmo clinic</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(window).on("load", function () {
+			$(".loader__wrapper").fadeOut("slow");
+		});
+
+		$(document).ready(function () {
+			$(this).scrollTop(0);
+		});
+	</script>
 </head>
 
 <body>
 
+	<div class="loader__wrapper">
+		<div class="loader__02">
+			<strong>Loading</strong>
+			<span style="--i: 1"></span>
+			<span style="--i: 2"></span>
+			<span style="--i: 3"></span>
+			<span style="--i: 4"></span>
+			<span style="--i: 5"></span>
+			<span style="--i: 6"></span>
+			<span style="--i: 7"></span>
+			<span style="--i: 8"></span>
+			<span style="--i: 9"></span>
+			<span style="--i: 10"></span>
+			<span style="--i: 11"></span>
+			<span style="--i: 12"></span>
+			<span style="--i: 13"></span>
+			<span style="--i: 14"></span>
+			<span style="--i: 15"></span>
+			<span style="--i: 16"></span>
+			<span style="--i: 17"></span>
+			<span style="--i: 18"></span>
+			<span style="--i: 19"></span>
+			<span style="--i: 20"></span>
+		</div>
+	</div>
+
 	<nav class="navbar sticky-lg-top navbar-expand-lg bg-white">
 		<div class="container">
 
-			<img class="navbar-brand" src="assets/images/logo.svg" width="300" height="90" alt="logo">
+			<img class="navbar-brand" src="assets/images/logo.svg" style="max-width: 200px; width: 100vw;" alt="logo">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -25,18 +63,18 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav d-flex ms-auto">
 					<li class="nav-item ">
-						<a class="nav-link active" href="#">Home</a></li>
+						<a class="nav-link active" href="#">Asosiy</a></li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Find a doctor</a>
+						<a class="nav-link" href="#">Jamoa</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Apps</a>
+						<a class="nav-link" href="#">Galereya</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Testimonials</a>
+						<a class="nav-link" href="#">Xizmatlar</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About us</a>
+						<a class="nav-link" href="#">Biz haqimizda</a>
 					</li>
 
 				</ul>
@@ -45,7 +83,7 @@
 	</nav>
 
 	<main>
-		<section class="hero ">
+		<section class="hero">
 			<div class="container">
 
 				<div class="row flex-lg-row-reverse align-items-center d-flex justify-content-center g-5 py-5">
@@ -54,13 +92,12 @@
 							height="600">
 					</div>
 					<div class="col-lg-6 col-12 text-center text-lg-start">
-						<h1 class="display-3 fw-bold m-0 py-3">Virtual healthcare
-							for you</h1>
-						<p class="lead my-3">Trafalgar provides progressive, and affordable
-							shealthcare, accessible on mobile and online
-							for everyone</p>
-						<button type="button" class="btn btn-outline-secondary rounded-5 btn-lg px-4 me-md-2">Consult
-							today</button>
+						<h1 class="display-3 fw-bold m-0 py-3">Asmo klinikasiga xush kelibsiz</h1>
+						<p class="lead my-3">
+							“Teringizga yaxshi munosabatda bo'ling. Siz uni butun umringiz davomida har kuni kiyasiz." -
+							Rene Rulo</p>
+						<a type="button" href="tel:+998555018866"
+							class="btn btn-outline-secondary rounded-5 btn-lg px-4 me-md-2">Bog`lanish</a>
 					</div>
 				</div>
 			</div>
@@ -85,10 +122,10 @@
 
 
 		<section class="container">
-			<div class="row-cols-1 row-cols-lg-4 d-flex flex-row flex-wrap gap-5 align-items-center text-lg-start
+			<div class="row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 d-flex flex-row flex-wrap gap-5 align-items-center text-lg-start
 				text-center justify-content-center">
 
-				<div class="card rounded-4" style="width: 322px;">
+				<div class="card rounded-4" style="width: 280px;">
 					<div class="card-body  p-4">
 						<img src="assets/images/lupa.svg" alt="zoom" height="95" width="80">
 						<h4 class="py-4">Search doctor</h4>
@@ -97,7 +134,7 @@
 							card"s content.</p>
 					</div>
 				</div>
-				<div class="card rounded-4" style="width: 322px;">
+				<div class="card rounded-4" style="width: 280px;">
 					<div class="card-body  p-4">
 						<img src="assets/images/frame.svg" alt="zoom" height="95" width="80">
 
@@ -107,7 +144,7 @@
 							card"s content.</p>
 					</div>
 				</div>
-				<div class="card rounded-4" style="width: 322px;">
+				<div class="card rounded-4" style="width: 280px;">
 					<div class="card-body  p-4">
 						<img src="assets/images/consult.svg" alt="zoom" height="95" width="80">
 						<h4 class="py-4">Consultation</h4>
@@ -116,38 +153,22 @@
 							card"s content.</p>
 					</div>
 				</div>
-				<div class="card rounded-4" style="width: 322px;">
+				<div class="card rounded-4" style="width: 280px;">
 					<div class="card-body  p-4">
-						<img src="assets/images/detail.svg" alt="zoom" height="95" width="80">
-						<h4 class="py-4">Details info</h4>
+						<img src="assets/images/consult.svg" alt="zoom" height="95" width="80">
+						<h4 class="py-4">Consultation</h4>
 						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
 							the
 							card"s content.</p>
 					</div>
 				</div>
-				<div class="card rounded-4" style="width: 322px;">
-					<div class="card-body  p-4">
-						<img src="assets/images/bag.svg" alt="zoom" height="95" width="80">
-						<h4 class="py-4">Emergency care</h4>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
-							the
-							card"s content.</p>
-					</div>
-				</div>
-				<div class="card rounded-4" style="width: 322px;">
-					<div class="card-body  p-4">
-						<img src="assets/images/note.svg" alt="zoom" height="95" width="80">
-						<h4 class="py-4">Tracking</h4>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
-							the
-							card"s content.</p>
-					</div>
-				</div>
-				<a class="btn btn-outline-secondary rounded-5 mt-5 d-flex align-items-center justify-content-center"
-					style="width: 200px;height: 55px;">Learn more</a>
 
 
-		</section>
+
+
+		</section><a
+			class="btn btn-outline-secondary rounded-5 mt-5 d-flex align-items-center justify-content-center mx-auto"
+			style="width: 200px;height: 55px;">Learn more</a>
 
 		<section class="container">
 			<div class="row flex-lg-row align-items-center g-5 py-5">
@@ -158,8 +179,9 @@
 				<div class="col-lg-6 text-center text-lg-start">
 					<h1 class="display-6 fw-bold lh-1 mb-3" style="max-width: 500px;">Leading healthcare providers
 					</h1>
-					<p class="lead">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and
-						online for everyone. To us, it`s not just work. We take pride in the solutions we deliver</p>
+					<p class="lead">“Teringizga qanday moddalar surtishingiz muhim emas. Noto'g'ri ovqatlanish, stressni
+						engish, dam olish va atrof-muhitning ta'sir qilish muhim. - Endryu Vayl
+					</p>
 					<button type="button" class="btn btn-outline-secondary rounded-5  btn-lg px-4 me-md-2"
 						style="width:200px;">Primary</button>
 				</div>
